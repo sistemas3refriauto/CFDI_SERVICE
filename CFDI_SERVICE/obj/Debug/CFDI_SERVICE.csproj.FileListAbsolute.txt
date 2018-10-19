@@ -1,0 +1,5 @@
+C:\Users\Hilda\Source\Repos2\GeneradorPDF\CFDI_SERVICE\CFDI_SERVICE\bin\Debug\CFDI_SERVICE.dll
+C:\Users\Hilda\Source\Repos2\GeneradorPDF\CFDI_SERVICE\CFDI_SERVICE\bin\Debug\CFDI_SERVICE.pdb
+C:\Users\Hilda\Source\Repos2\GeneradorPDF\CFDI_SERVICE\CFDI_SERVICE\obj\Debug\CFDI_SERVICE.csprojResolveAssemblyReference.cache
+C:\Users\Hilda\Source\Repos2\GeneradorPDF\CFDI_SERVICE\CFDI_SERVICE\obj\Debug\CFDI_SERVICE.dll
+C:\Users\Hilda\Source\Repos2\GeneradorPDF\CFDI_SERVICE\CFDI_SERVICE\obj\Debug\CFDI_SERVICE.pdb
