@@ -14,6 +14,7 @@ namespace CFDI_SERVICE
         class select
         {
             public void tabla(string tabla) {
+
             }
             public void dato(string tabla, string dato) {
             }

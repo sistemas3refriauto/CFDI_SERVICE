@@ -11,44 +11,93 @@ namespace CFDI_SERVICE
         private string[] UbicacionesXml;
         processXML _processX;
         #region archivo unico
-        public void setXML(string path)
+        public string setXML(string RutaXMLs, string ruta)
         {
-            _processX = new processXML();
+            try
+            {
+                _processX = null;
+                _processX = new processXML();
+                return "";
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
         }
-        public void setXML(string path, bool print)
+        public string setXML(string RutaXMLs, string ruta, bool print)
         {
-            setXML(path);
-            //TODO Codigo para mandar a imprimir
+            try
+            {
+                setXML(RutaXMLs, ruta);
+                //TODO Codigo para mandar a imprimir
+                return "";
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
         }
-        public void setXML(string path, bool print, bool email)
+        public string setXML(string RutaXMLs, string ruta, bool print, bool email)
         {
-            setXML(path,print);
-            //TODO Codigo para mandar por correo electronico
+            try
+            {
+                setXML(RutaXMLs, ruta, print);
+                //TODO Codigo para mandar por correo electronico
+                return "";
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
         }
         #endregion
         #region archivo multiple
-        public void setXML(string[] path)
+        public string setXML(string[] RutaXMLs, string ruta)
         {
-            UbicacionesXml = path;
-            foreach(string var in UbicacionesXml)
+            try
             {
-                setXML(var);
+                UbicacionesXml = RutaXMLs;
+                foreach (string var in UbicacionesXml)
+                {
+                    setXML(var, ruta);
+                }
+                return "";
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
             }
         }
-        public void setXML(string[] path, bool print)
+        public string setXML(string[] RutaXMLs, string ruta, bool print)
         {
-            UbicacionesXml = path;
-            foreach (string var in UbicacionesXml)
+            try
             {
-                setXML(var, print);
+                UbicacionesXml = RutaXMLs;
+                foreach (string var in UbicacionesXml)
+                {
+                    setXML(var, ruta, print);
+                }
+                return "";
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
             }
         }
-        public void setXML(string[] path, bool print, bool email)
+        public string setXML(string[] RutaXMLs, string ruta, bool print, bool email)
         {
-            UbicacionesXml = path;
-            foreach (string var in UbicacionesXml)
+            try
             {
-                setXML(var, print,email);
+                UbicacionesXml = RutaXMLs;
+                foreach (string var in UbicacionesXml)
+                {
+                    setXML(var, ruta, print, email);
+                }
+                return "";
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
             }
         }
         #endregion

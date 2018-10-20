@@ -16,10 +16,10 @@ namespace CFDI_SERVICE
         ReportDocument MyReportDocumenet;
 
 
-        public void ComprobanteDePago(string path)
+        public void ComprobanteDePago(string RutaXMLs)
         {
             fact = new LeerFacturaComprobantePago();
-            string tipfact = fact.tipoFactura(path);
+            string tipfact = fact.tipoFactura(RutaXMLs);
             Comprobante comp = fact.getComprobante;
             qr_generate qr = new qr_generate();
             string qrstring;
@@ -102,14 +102,14 @@ namespace CFDI_SERVICE
                 comp.Complemento.TimbreFiscalDigital.NoCertificadoSAT;
             MyReportDocumenet.SetParameterValue("Cadena", cadena);
         }
-        public void ComprobanteDePagoSave(string pathArch)
+        public void ComprobanteDePagoSave(string RutaXMLsArch)
         {
             if (!(MyReportDocumenet != null))
                 return;
-            string pathS = Path.GetDirectoryName(pathArch) + @"\";
-            string filename = Path.GetFileNameWithoutExtension(pathArch);
+            string RutaXMLsS = Path.GetDirectoryName(RutaXMLsArch) + @"\";
+            string filename = Path.GetFileNameWithoutExtension(RutaXMLsArch);
             string extension = ".pdf";
-            string aguardar = pathS + filename + extension;
+            string aguardar = RutaXMLsS + filename + extension;
             MyReportDocumenet.ExportToDisk(ExportFormatType.PortableDocFormat, aguardar);
         }
     }
