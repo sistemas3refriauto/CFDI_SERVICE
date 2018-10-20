@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Comprobante.cs" />
+    <Compile Include="dataBase.cs" />
     <Compile Include="datosPago.cs" />
     <Compile Include="Generador.cs" />
     <Compile Include="LeerFacturaComprobantePago.cs" />
