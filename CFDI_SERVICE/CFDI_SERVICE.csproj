@@ -72,7 +72,10 @@
     <Compile Include="CFDI_class\Pagos.cs" />
     <Compile Include="CFDI_class\PagosPago.cs" />
     <Compile Include="CFDI_class\PagosPagoDoctoRelacionado.cs" />
+    <Compile Include="CFDI_class\Retenciones.cs" />
     <Compile Include="CFDI_class\TimbreFiscalDigital.cs" />
+    <Compile Include="CFDI_class\Traslado.cs" />
+    <Compile Include="CFDI_class\Traslados.cs" />
     <Compile Include="Helper\dataBase.cs" />
     <Compile Include="Helper\DatosMail.cs" />
     <Compile Include="Helper\datosPago.cs" />
@@ -93,6 +96,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="estructura del cfdi.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,0 +1,81 @@
+﻿Comprobante
+	Version
+	Serie
+	Folio
+	Fecha
+	Sello
+	FormaPago
+	NoCerficado
+	Certificado
+	CondicionesDePago
+	SubTotal
+	Descuento
+	Moneda
+	TipoCambio
+	Total
+	TipoDeComprobante
+	MetodoPago
+	LugarExpedicion
+	Confirmacion
+		CfdiRelacionados
+			CfdiRelacionado 
+				cfdirelacionado
+					UUID
+		Emisor
+			Rfc
+			Nombre
+			RegimenFiscal
+		Receptor
+			Rfc
+			Nombre
+			ResidenciaFiscal
+			NumRegIdTRib
+			UsoCFDI
+		Conceptos
+			ClaveProdSer
+			NoIdentificacion
+			Cantidad
+			ClaveUnidad
+			Unidad
+			Descripcion
+			ValorUnitario
+			Importe
+			Descuento
+				Impuestos 0..n
+					traslados  0||1
+						traslado 1..n
+							base
+							impuesto
+							TipoFactor
+							TasaOCuota
+							Importe
+					retenciones 0||1
+						retencion
+							base
+							impuesto
+							TipoDeFactor
+							TasaOCuota
+							Importe
+				InformacionAduanera 0..n
+					InformacionAduanera
+						numeroPedimento
+				CuentaPredial 0..n
+					Numero
+				ComplementoConcepto 0..n
+
+				Parte
+					ClaveProdSer
+					Noidentificacion
+					Cantidad
+					Unidad
+					Descripcion
+					Valorunitario
+					Importe
+					InformacionAduanera 1..n
+					 informacion aduanera 1..n
+						numeroPedimiento 
+					
+		Complemento
+		Addena
+
+
