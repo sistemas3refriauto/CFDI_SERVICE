@@ -10,8 +10,9 @@ namespace CFDI_SERVICE
         {
             get
             {
-
+                return trasladoField;
             }
+            set { trasladoField = value; }
         }
     }
 }

@@ -15,7 +15,7 @@ namespace CFDI_SERVICE
         private string usoCFDIField;
         [OptionalField]
         private string NumRegIdTribField;
-        System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.Xml.Serialization.XmlAttributeAttribute()]
         public string NumRegIdTrib
         {
             get
@@ -28,7 +28,7 @@ namespace CFDI_SERVICE
             }
         }
 
-        System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.Xml.Serialization.XmlAttributeAttribute()]
         public string ResidenciaFiscalField
         {
             get

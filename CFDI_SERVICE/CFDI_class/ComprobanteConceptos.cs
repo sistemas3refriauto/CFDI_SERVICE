@@ -5,10 +5,10 @@
     public class ComprobanteConceptos
     {
 
-        private ComprobanteConceptosConcepto conceptoField;
+        private ComprobanteConceptosConcepto[] conceptoField;
 
         /// <remarks/>
-        public ComprobanteConceptosConcepto Concepto
+        public ComprobanteConceptosConcepto[] Concepto
         {
             get
             {

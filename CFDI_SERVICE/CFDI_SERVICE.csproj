@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CFDI_class\CfdiRelacionado.cs" />
     <Compile Include="CFDI_class\ComprobanteAddenda.cs" />
     <Compile Include="CFDI_class\ComprobanteCfdiRelacionados.cs" />
     <Compile Include="CFDI_class\Comprobante.cs" />
