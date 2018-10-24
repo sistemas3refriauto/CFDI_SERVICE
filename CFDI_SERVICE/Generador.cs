@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace CFDI_SERVICE
 {
-    class Generador
+    public static class Generador
     {
-        private string[] UbicacionesXml;
-        processXML _processX;
+        private static string[] UbicacionesXml;
+        static processXML _processX;
         #region archivo unico
-        public string setXML(string RutaXMLs, string ruta)
+        public static string setXML(string RutaXMLs, string ruta)
         {
             try
             {
@@ -24,7 +24,7 @@ namespace CFDI_SERVICE
                 return ex.Message;
             }
         }
-        public string setXML(string RutaXMLs, string ruta, bool print)
+        public static string setXML(string RutaXMLs, string ruta, bool print)
         {
             try
             {
@@ -37,7 +37,7 @@ namespace CFDI_SERVICE
                 return ex.Message;
             }
         }
-        public string setXML(string RutaXMLs, string ruta, bool print, bool email)
+        public static string setXML(string RutaXMLs, string ruta, bool print, bool email)
         {
             try
             {
@@ -52,7 +52,7 @@ namespace CFDI_SERVICE
         }
         #endregion
         #region archivo multiple
-        public string setXML(string[] RutaXMLs, string ruta)
+        public static string setXML(string[] RutaXMLs, string ruta)
         {
             try
             {
@@ -68,7 +68,7 @@ namespace CFDI_SERVICE
                 return ex.Message;
             }
         }
-        public string setXML(string[] RutaXMLs, string ruta, bool print)
+        public static string setXML(string[] RutaXMLs, string ruta, bool print)
         {
             try
             {
@@ -84,7 +84,7 @@ namespace CFDI_SERVICE
                 return ex.Message;
             }
         }
-        public string setXML(string[] RutaXMLs, string ruta, bool print, bool email)
+        public static string setXML(string[] RutaXMLs, string ruta, bool print, bool email)
         {
             try
             {
