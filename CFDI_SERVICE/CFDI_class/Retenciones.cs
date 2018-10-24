@@ -1,6 +1,6 @@
 ﻿namespace CFDI_SERVICE
 {
-    public class Retenciones
+    public class TrasladosRetenciones
     {
     }
 }

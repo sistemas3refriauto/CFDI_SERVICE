@@ -5,8 +5,8 @@ namespace CFDI_SERVICE
 {
     public class Traslados
     {
-        private Traslado trasladoField;
-        public Traslado Traslado
+        private TrasladosTraslado trasladoField;
+        public TrasladosTraslado Traslado
         {
             get
             {

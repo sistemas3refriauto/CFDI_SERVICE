@@ -19,6 +19,7 @@ namespace CFDI_SERVICE
             XmlSerializer serializer = new XmlSerializer(typeof(Comprobante));
             XmlTextReader reader = new XmlTextReader(rutaXml);
             comprobante = (Comprobante)serializer.Deserialize(reader);
+            
         }
         public Comprobante getComprobante
         {

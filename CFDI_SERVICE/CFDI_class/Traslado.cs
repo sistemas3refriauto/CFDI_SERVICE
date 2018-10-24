@@ -2,7 +2,7 @@
 using System.Xml.Serialization;
 namespace CFDI_SERVICE
 {
-    public class Traslado
+    public class TrasladosTraslado
     {
         #region variables
         private string baseField;
@@ -19,6 +19,12 @@ namespace CFDI_SERVICE
         {
             get { return baseField; }
             set { baseField = value; }
+        }
+        [XmlAttributeAttribute()]
+        public string Impuestos
+        {
+            get { return impuestoField; }
+            set { impuestoField = value; }
         }
         [XmlAttributeAttribute()]
         public string TipoFactor

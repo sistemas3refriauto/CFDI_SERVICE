@@ -8,15 +8,10 @@ namespace CFDI_SERVICE
     {
 
         private string claveProdServField;
-
         private string cantidadField;
-
         private string claveUnidadField;
-
         private string descripcionField;
-
         private string valorUnitarioField;
-
         private string importeField;
         [OptionalField]
         private string NoIdentificacionField;

@@ -6,10 +6,10 @@ namespace CFDI_SERVICE
     public class ComprobanteImpuestos
     {
         [OptionalField]
-        private Traslados trasladosField;
+        private TrasladosTraslado[] trasladosField;
         [OptionalField]
-        private Retenciones retencionesField;
-        public Traslados Traslados
+        private TrasladosRetenciones[] retencionesField;
+        public TrasladosTraslado[] Traslados
         {
             set
             {
@@ -21,7 +21,7 @@ namespace CFDI_SERVICE
             }
         }
         
-        public Retenciones Retenciones
+        public TrasladosRetenciones[] Retenciones
         {
             set
             {
